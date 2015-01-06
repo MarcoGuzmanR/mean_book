@@ -21,7 +21,7 @@ exports.create = function(req, res) {
   article.save(function(err) {
     if (err) {
       return res.status(400).send({
-        message: getErrorMessage(err);
+        message: getErrorMessage(err)
       });
     }
     else {

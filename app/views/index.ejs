@@ -6,12 +6,12 @@
   <body>
     <!--<img src='img/half-life-logo.jpg'>-->
     <!--<h1><%= title %></h1>-->
-    <% if (user) { %>
-      <a href='/signout'>Sign Out</a>
-    <% } else { %>
-      <a href='/signup'>Sign Up</a>
-      <a href='/signin'>Sign In</a>
-    <% } %>
+    <!--<% if (user) { %>-->
+      <!--<a href='/signout'>Sign Out</a>-->
+    <!--<% } else { %>-->
+      <!--<a href='/signup'>Sign Up</a>-->
+      <!--<a href='/signin'>Sign In</a>-->
+    <!--<% } %>-->
 
     <section ng-view></section>
 
@@ -21,11 +21,19 @@
 
     <script type="text/javascript" src="lib/angular/angular.js"></script>
     <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="lib/angular-route/angular-resource.js"></script>
+    <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+
     <script type="text/javascript" src="/application.js"></script>
+
+    <script type="text/javascript" src="/articles/articles.client.module.js"></script>
+    <script type="text/javascript" src="/articles/controllers/articles.client.controller.js"></script>
+    <script type="text/javascript" src="/articles/services/articles.client.service.js"></script>
+    <script type="text/javascript" src="/articles/config/articles.client.routes.js"></script>
+
     <script type="text/javascript" src="/example/example.client.module.js"></script>
     <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
     <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
+
     <script type="text/javascript" src="/users/services/users.client.module.js"></script>
     <script type="text/javascript" src="/users/services/authentication.client.service.js"></script>
   </body>
